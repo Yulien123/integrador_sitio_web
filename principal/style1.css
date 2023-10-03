@@ -18,11 +18,11 @@ body {
 }
 
 .header {
-    background-image: url(/principal/img/sierrafiltro.jpg);
+    background-image:url(/principal/img/oficial.jpeg) ; 
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 70vh;
+    background-size:cover;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,8 @@ body {
 }
 
 .menu .navbar ul li a:hover {
-    color: #CE967B; /*para cuando pasa el cursor*/
+    color: #47BA34
+    ; /*para cuando pasa el cursor*/
 }
 
 #menu {
@@ -76,7 +77,7 @@ body {
 }
 
 .header-content{
-    text-align: center;
+    text-align: left;
 }
 
 .header-content h1 {
@@ -89,20 +90,77 @@ body {
 }
 
 .header-content p {
-    font-size: 16px;
-    color: #C5C5C5;
-    padding: 0 250px;
+    font-size: 20px;
+    color: #F9FAFC;;
     margin-bottom: 25px;
+    text-align: left;
 }
 
 .btn-1 {
     display: inline-block;
     padding: 11px 35px;
-    background-color: #CE9678;
+    background-color: #47BA34;
     color: #F9FAFC;
     text-transform: uppercase;
     
 }
 .btn-1:hover {
-    background-color: #EBAD8D;
+    background-color: #4AB23A;
+}
+
+.house {
+    padding: 100xp 0;
+    background-color: #E1E2E6;
+    position: relative;
+}
+
+.house-content {
+    text-align: center;
+} 
+
+
+.house-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.house-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.house-1 {
+    padding: 0 25px;
+}
+
+.house-1 img {
+    width: 200px;
+
+}
+
+.house-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    
+}
+
+.house-1 h3{
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+    
 }
