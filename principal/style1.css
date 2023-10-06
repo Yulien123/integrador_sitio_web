@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    background-image:url(/principal/img/oficial.jpeg) ; 
+    background-image:url(img/pexels-cottonbro-studio-3951409.jpg) ; 
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size:cover;
@@ -59,8 +59,9 @@ body {
 }
 
 .menu .navbar ul li a:hover {
-    color: #47BA34
-    ; /*para cuando pasa el cursor*/
+    color: #47BA34;
+    transition: all .3s;
+     /*para cuando pasa el cursor*/
 }
 
 #menu {
@@ -76,8 +77,42 @@ body {
     display: none;
 }
 
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #323337;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: #414247;
+    transition:  all .3s;
+}
+.submenunav {
+    position: absolute;
+    background: #323337;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenunav li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu li:hover .submenunav {
+    visibility: visible;
+    opacity: 1;
+}
+
 .header-content{
     text-align: left;
+    margin-left: 100px;
 }
 
 .header-content h1 {
@@ -102,6 +137,7 @@ body {
     background-color: #47BA34;
     color: #F9FAFC;
     text-transform: uppercase;
+    margin-bottom: 25px;
     
 }
 .btn-1:hover {
@@ -146,15 +182,15 @@ body {
 }
 
 .house-1 img {
-    width: 200px;
-
+    width: 100px;
+    height: 100px;
 }
 
 .house-img {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
+    top: 15px;
+    right: 10px;
+    width: 200px;
     
 }
 
@@ -162,5 +198,55 @@ body {
     color: #323337;
     font-size: 20px;
     margin-bottom: 15px;
-    
+   
+}
+
+.services {
+    background-image: 
+        url(img/cervezavista.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC ;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 20px;
+  
+    color: #fff;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img { 
+    width: 100px;
+    margin-bottom:  15px;
+}
+
+.services-1 h3 {
+    color: #ffffff;
+    font-size: 18px ;
 }
