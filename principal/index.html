@@ -133,7 +133,52 @@
     </section>
     <!---Form-->
     <footer class="footer">
-        
+        <div class="formContainer">
+            <form onsubmit="return validacionForm()" class="form" id="form" autocomplete="off">
+                <p class="form-title">Regístrate</p>
+                <div class="form-input myname">
+                    <input type="text" id="myname">
+                    <label for="myname">Nombre</label>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input surname">
+                    <input type="text" id="surname">
+                    <label for="surname">Apellido</label>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input email">
+                    <input type="text" id="email">
+                    <label for="email">Correo Electronico</label>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input mobile">
+                    <input type="text" id="mobile">
+                    <label for="mobile">Celular</label>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input pw">
+                    <input type="password" id="pw">
+                    <label for="pw">Contraseña</label>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input repeatPw">
+                    <input type="password" id="repeatPw">
+                    <label for="repeatPw">Repite la Contraseña</label>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-termsAndConditions termsAndConditions">
+                    <input type="checkbox" id="termsAndConditions">
+                    <label for="termsAndConditions">He leído y acepto los</label>
+                    <a href="#">Términos y condiciones</a>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-buttom">
+                    <input type="submit" id="enviar">
+                </div>
+                <p class="mensajeCorrecto"></p>
+            </form>
+            <script src="script.js"></script>
+        </div>
     </footer>
 </body>
 </html>

@@ -322,3 +322,113 @@ body {
     color: #ffffff;
     font-size: 18px ;
 }
+ /*formulario*/
+ .footer {
+    padding: 100px 0;
+    background-color: #414247;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 600px;
+    background-color: #2c2f35;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.formContainer {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+:root {
+    --cfondo: rgb(207, 211, 212);
+    --cfondoForm1: rgba(1, 80, 88, 0.39);
+    --cfondoForm2: rgb(19, 176, 95);
+    --cnegro: black;
+    --ctexto: rgb(14, 81, 88);
+    --cblanco: white;
+    --ctextoDark: rgb(1, 35, 39);
+    --error: rgba(184, 31, 31);
+}
+.form {
+    border-top: 2px solid black;
+    max-width: 400px;
+    padding: 30px 50px;
+    margin: auto;
+    margin-top: 10px;
+    background: linear-gradient(
+        0deg,
+        var(--cfondoForm1) 0%,
+        var(--cfondoForm2) 50%
+    );
+}
+.form-title {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.form-input {
+    margin-bottom: 30px;
+}
+.form-input label {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--ctexto);
+}
+.form-input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid var(--ctexto);
+}
+
+.form-termsAndConditions {
+   margin-left: 15px;
+   position: relative;
+   color: var(--ctexto);
+   font-size: 13px;
+   
+}
+
+.form-input input:focus + label {
+    font-weight: bold;
+    color: var(--cnegro);
+}
+
+.form-buttom input {
+    background: var(--cnegro);
+    color: var(--cblanco);
+    padding: 10px 30px;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+}
+.form-buttom input:hover {
+    background: var(--ctextoDark);
+    transition: 0.5s;
+}
+.mensajeError {
+    color: var(--error);
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+}
