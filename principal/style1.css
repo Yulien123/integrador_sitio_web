@@ -15,10 +15,11 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .header {
-    background-image:url(img/pexels-cottonbro-studio-3951409.jpg) ; 
+    background-image:url(img/fondocasa.jpg) ; 
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size:cover;
@@ -26,6 +27,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
 }
 
@@ -110,26 +112,6 @@ body {
     opacity: 1;
 }
 
-.header-content{
-    text-align: left;
-    margin-left: 100px;
-}
-
-.header-content h1 {
-    
-    font-size: 75px;
-    line-height: 80px;
-    color: #F9FAFC;
-    text-transform: uppercase;
-    margin-bottom: 35px;
-}
-
-.header-content p {
-    font-size: 20px;
-    color: #F9FAFC;;
-    margin-bottom: 25px;
-    text-align: left;
-}
 
 .btn-1 {
     display: inline-block;
@@ -143,6 +125,96 @@ body {
 .btn-1:hover {
     background-color: #4AB23A;
 }
+
+.header-content .container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 10px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.header-content p {
+    font-size: 20px;
+    color: #F9FAFC;;
+    margin-bottom: 25px;
+    text-align: center;
+}
+/*carrousel*/
+.container-carousel {
+    position:relative;
+    width: 50%;
+    height: 350px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-left: 110px;
+    
+    
+}
+
+.carruseles {
+    width: 300%;
+    height: 100%;
+    display: flex;
+
+}
+
+.slider-section {
+    width: calc(100% / 3);
+    height: 100%; 
+}
+
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4AB23A;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+/* -------------- */
 
 .house {
     padding: 100xp 0;
