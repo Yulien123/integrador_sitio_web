@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,7 +35,7 @@
                         </ul>
                     </li>
                     <li><a href="#">CONTACTOS</a></li>
-                    <li><a href="#">INGRESAR</a></li>
+                    <li><a href="#login">INGRESAR</a></li>
                 </ul>
             </nav>
         </div>
@@ -133,9 +136,59 @@
     </section>
     <!---Form-->
     <footer class="footer">
-        <div class="formContainer">
-            <form onsubmit="return validacionForm()" class="form" id="form" autocomplete="off">
+        <div class="formContainer" id="login">
+            <h2>únete a Heisenberg</h2>
+            <form class="form" onsubmit="return ValidarFormulario()" id="frm">
                 <p class="form-title">Regístrate</p>
+                <div class="mensajeError">
+                    <ul id="ltaErrores"></ul>
+                </div>
+                <div class="form-input">
+                    <label for="f_nombre">Nombre</label>
+                    <input type="text" id="f_nombre" name="f_nombre" maxlength="16" pattern="[a-ZA-z]{3,16}" />
+                </div>
+                <div class="form-input">
+                    <label for="f_apellido">Apellido</label>
+                    <input type="text" id="f_edad" name="f_edad" maxlength="16" pattern="[a-ZA-z]{3,16}" />
+                </div>
+                <div class="form-input">
+                    <label for="f_edad">Edad</label>
+                    <input type="number" id="f_apellido" name="f_apellido" min="18" max="100" />
+                </div>
+                <div class="form-input">
+                    <label for="f_correo">Correo Electronico</label>
+                    <input type="email" id="f_correo" name="f_correo" maxlength="50" />
+                </div>
+                <div class="form-input">
+                    <label for="f_comentario">Deja un comentario</label>
+                    <input type="text" id="f_comentario" name="f_comentario" minlength="3" maxlength="250" />
+                </div>
+                <div class="form-termsAndConditions termsAndConditions">
+                    <input id="f_tyc" name="f_tyc" type="checkbox" />
+                    <label for="f_tyc">He leído y acepto los </label>
+                    <a id="terms" href="#terms">Terminos y Condiciones</a>
+                </div>
+                <div class="form-buttom">
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                </div>
+                    <div class="mensajeCorrecto" id="miDiv">
+                        <h3 id="pSaludo"></h3>
+                        <p id="nombreOut"></p>
+                        <p id="apellidoOut"></p>
+                        <p id="edadOut"></p>
+                        <p id="correoOut"></p>
+                        <p id="comentarioOut"></p>
+                    </div>
+            </form>
+            
+            <script src="script.js"></script>
+    </footer>
+</body>
+
+</html>
+
+<!--
+     <p class="form-title">Regístrate</p>
                 <div class="form-input myname">
                     <input type="text" id="myname">
                     <label for="myname">Nombre</label>
@@ -176,9 +229,4 @@
                     <input type="submit" id="enviar">
                 </div>
                 <p class="mensajeCorrecto"></p>
-            </form>
-            <script src="script.js"></script>
-        </div>
-    </footer>
-</body>
-</html>
+-->

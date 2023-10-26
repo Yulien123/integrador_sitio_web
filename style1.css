@@ -344,7 +344,7 @@ body {
     text-align: center;
     border-radius: 25px;
 }
-
+/*Formulario*/
 .formContainer {
     max-width: 90%;
     margin: auto;
@@ -353,11 +353,11 @@ body {
 :root {
     --cfondo: rgb(207, 211, 212);
     --cfondoForm1: rgba(1, 80, 88, 0.39);
-    --cfondoForm2: rgb(19, 176, 95);
+    --cfondoForm2: rgb(19, 184, 66);
     --cnegro: black;
-    --ctexto: rgb(14, 81, 88);
+    --ctexto: rgb(255, 255, 255);
     --cblanco: white;
-    --ctextoDark: rgb(1, 35, 39);
+    --ctextoDark: rgb(2, 21, 23);
     --error: rgba(184, 31, 31);
 }
 .form {
@@ -379,6 +379,17 @@ body {
     margin: 0;
     margin-bottom: 20px;
     letter-spacing: 3px;
+}
+.formContainer h2 {
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    color: #47BA34;
+    
 }
 .form-input {
     margin-bottom: 30px;
@@ -404,13 +415,15 @@ body {
    font-size: 13px;
    
 }
-
+.form-termsAndConditions a{
+ font-weight: bold;
+}
 .form-input input:focus + label {
     font-weight: bold;
     color: var(--cnegro);
 }
 
-.form-buttom input {
+.form-buttom button {
     background: var(--cnegro);
     color: var(--cblanco);
     padding: 10px 30px;
@@ -420,7 +433,7 @@ body {
     margin-top: 40px;
     border: none;
 }
-.form-buttom input:hover {
+.form-buttom button:hover {
     background: var(--ctextoDark);
     transition: 0.5s;
 }
@@ -431,7 +444,23 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
 .mensajeCorrecto {
+    background-color: #000000;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-radius: 10px;
+    border: solid #fff 2px;
+    padding: 15px;
+}
+#miDiv{
+    display: none;
+ }
+.mensajeCorrecto p{
+    color: #E1E2E6;
+}
+.mensajeCorrecto h3{
+    color: #E1E2E6;
     text-align: center;
-    font-weight: bold;
 }
