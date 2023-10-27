@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,20 +15,20 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    
+
 }
 
 .header {
-    background-image:url(img/fondocasa.jpg) ; 
+    background-image: url(img/fondocasa.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+
+
 }
 
 .menu {
@@ -44,7 +44,8 @@ body {
 .logo {
     color: #FFFDFC;
     font-size: 25px;
-    font-weight: 800; /*por el google font*/
+    font-weight: 800;
+    /*por el google font*/
 }
 
 .menu .navbar ul li {
@@ -63,36 +64,39 @@ body {
 .menu .navbar ul li a:hover {
     color: #47BA34;
     transition: all .3s;
-     /*para cuando pasa el cursor*/
+    /*para cuando pasa el cursor*/
 }
 
 #menu {
     display: none;
 }
 
-.menu-icono{
+.menu-icono {
     width: 25px;
 }
 
-.menu label{
+.menu label {
     cursor: pointer;
     display: none;
 }
 
-.menu > li{
+.menu>li {
     position: relative;
     display: inline-block;
 }
-.menu > li > a{
+
+.menu>li>a {
     display: block;
     padding: 15px 20px;
     color: #323337;
     text-decoration: none;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: #414247;
-    transition:  all .3s;
+    transition: all .3s;
 }
+
 .submenunav {
     position: absolute;
     background: #323337;
@@ -101,12 +105,14 @@ body {
     opacity: 0;
     transition: opacity 1.5s;
 }
+
 .submenunav li a {
     display: block;
     padding: 15px;
     color: #fff;
     text-decoration: none;
 }
+
 .menu li:hover .submenunav {
     visibility: visible;
     opacity: 1;
@@ -120,8 +126,9 @@ body {
     color: #F9FAFC;
     text-transform: uppercase;
     margin-bottom: 25px;
-    
+
 }
+
 .btn-1:hover {
     background-color: #4AB23A;
 }
@@ -130,7 +137,6 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-   
 }
 
 .header-content h1 {
@@ -144,7 +150,8 @@ body {
 
 .header-content p {
     font-size: 20px;
-    color: #F9FAFC;;
+    color: #F9FAFC;
+    ;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -153,17 +160,15 @@ body {
 
 /*carrousel*/
 .container-carousel {
-    position:relative;
-    width: 50%;
+    position: relative;
+    width: 100%;
     height: 350px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
     border-radius: 15px;
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    margin-left: 110px;
-    
-    
+
 }
 
 .carruseles {
@@ -175,7 +180,7 @@ body {
 
 .slider-section {
     width: calc(100% / 3);
-    height: 100%; 
+    height: 100%;
 }
 
 .slider-section img {
@@ -183,7 +188,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    
+
 }
 
 .btn-left,
@@ -198,7 +203,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     color: #4AB23A;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     transition: .5s ease;
     user-select: none;
 }
@@ -227,7 +232,7 @@ body {
 
 .house-content {
     text-align: center;
-} 
+}
 
 
 .house-content h2 {
@@ -266,18 +271,18 @@ body {
     top: 15px;
     right: 10px;
     width: 200px;
-    
+
 }
 
-.house-1 h3{
+.house-1 h3 {
     color: #323337;
     font-size: 20px;
     margin-bottom: 15px;
-   
+
 }
 
 .services {
-    background-image: 
+    background-image:
         url(img/cervezavista.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -293,14 +298,13 @@ body {
 .services-content h2 {
     font-size: 55px;
     line-height: 70px;
-    color: #F9FAFC ;
+    color: #F9FAFC;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
 
 .services-content p {
     font-size: 20px;
-  
     color: #fff;
     margin-bottom: 50px;
     padding: 0 100px;
@@ -316,21 +320,23 @@ body {
     padding: 0 100px;
 }
 
-.services-1 img { 
+.services-1 img {
     width: 100px;
-    margin-bottom:  15px;
+    margin-bottom: 15px;
 }
 
 .services-1 h3 {
     color: #ffffff;
-    font-size: 18px ;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
- /*formulario*/
- .footer {
+
+/*formulario*/
+.footer {
     padding: 100px 0;
     background-color: #414247;
     width: 100%;
-   
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,12 +350,13 @@ body {
     text-align: center;
     border-radius: 25px;
 }
-/*Formulario*/
+
 .formContainer {
     max-width: 90%;
     margin: auto;
     margin-top: 20px;
 }
+
 :root {
     --cfondo: rgb(207, 211, 212);
     --cfondoForm1: rgba(1, 80, 88, 0.39);
@@ -360,18 +367,18 @@ body {
     --ctextoDark: rgb(2, 21, 23);
     --error: rgba(184, 31, 31);
 }
+
 .form {
     border-top: 2px solid black;
     max-width: 400px;
     padding: 30px 50px;
     margin: auto;
     margin-top: 10px;
-    background: linear-gradient(
-        0deg,
-        var(--cfondoForm1) 0%,
-        var(--cfondoForm2) 50%
-    );
+    background: linear-gradient(0deg,
+            var(--cfondoForm1) 0%,
+            var(--cfondoForm2) 50%);
 }
+
 .form-title {
     font-weight: bold;
     font-size: 30px;
@@ -380,6 +387,7 @@ body {
     margin-bottom: 20px;
     letter-spacing: 3px;
 }
+
 .formContainer h2 {
     font-weight: bold;
     font-size: 50px;
@@ -389,18 +397,21 @@ body {
     margin-bottom: 20px;
     letter-spacing: 3px;
     color: #47BA34;
-    
+
 }
+
 .form-input {
     margin-bottom: 30px;
 }
+
 .form-input label {
     display: block;
     margin-top: 10px;
     font-size: 15px;
     color: var(--ctexto);
 }
-.form-input input{
+
+.form-input input {
     width: 100%;
     border: none;
     outline: none;
@@ -409,16 +420,18 @@ body {
 }
 
 .form-termsAndConditions {
-   margin-left: 15px;
-   position: relative;
-   color: var(--ctexto);
-   font-size: 13px;
-   
+    margin-left: 15px;
+    position: relative;
+    color: var(--ctexto);
+    font-size: 13px;
+
 }
-.form-termsAndConditions a{
- font-weight: bold;
+
+.form-termsAndConditions a {
+    font-weight: bold;
 }
-.form-input input:focus + label {
+
+.form-input input:focus+label {
     font-weight: bold;
     color: var(--cnegro);
 }
@@ -433,10 +446,12 @@ body {
     margin-top: 40px;
     border: none;
 }
+
 .form-buttom button:hover {
     background: var(--ctextoDark);
     transition: 0.5s;
 }
+
 .mensajeError {
     color: var(--error);
     margin-top: 0px;
@@ -454,13 +469,84 @@ body {
     border: solid #fff 2px;
     padding: 15px;
 }
-#miDiv{
+
+#miDiv {
     display: none;
- }
-.mensajeCorrecto p{
+}
+
+.mensajeCorrecto p {
     color: #E1E2E6;
 }
-.mensajeCorrecto h3{
+
+.mensajeCorrecto h3 {
     color: #E1E2E6;
     text-align: center;
+}
+
+@media(max-width:991px){
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 100px 30px;
+    }
+    .header-content p {
+        padding: 0;
+    }
+    .house {
+        padding: 30px;
+    }
+    .house-content h2 {
+        padding: 0;
+    }
+    .txt-p {
+        padding: 0;
+    }
+    .house-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .house-img{
+        display: none;
+    }
+    .services {
+        padding: 30px;
+    }
+    .services-content p {
+        padding: 0;
+    }
+    .services-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .services-1 {
+        margin-bottom: 25px;
+    }
+    .footer {
+        padding: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }

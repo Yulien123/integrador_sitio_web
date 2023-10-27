@@ -1,50 +1,35 @@
-/* const carrousel*/
-const btnLeft = document.querySelector(".btn-left"),
-    btnRight = document.querySelector(".btn-right"),
-    slider = document.querySelector("#slider"),
-    sliderSection = document.querySelectorAll(".slider-section");
-
-btnLeft.addEventListener("click", e => moveToLeft())
-btnRight.addEventListener("click", e => moveToRight())
-
-setInterval(() => {
-    moveToRight()
-}, 3000);
-
-
-let operacion = 0,
-    counter = 0,
-    widthImg = 100 / sliderSection.length;
-
-function moveToRight() {
-    if (counter >= sliderSection.length - 1) {
-        counter = 0;
-        operacion = 0;
-        slider.style.transform = `translate(-${operacion}%)`;
-        slider.style.transition = "none";
-        return;
-    }
-    counter++;
-    operacion = operacion + widthImg;
-    slider.style.transform = `translate(-${operacion}%)`;
-    slider.style.transition = "all ease .6s"
-
-}
-
-function moveToLeft() {
-    counter--;
-    if (counter < 0) {
-        counter = sliderSection.length - 1;
-        operacion = widthImg * (sliderSection.length - 1)
-        slider.style.transform = `translate(-${operacion}%)`;
-        slider.style.transition = "none";
-        return;
-    }
-    operacion = operacion - widthImg;
-    slider.style.transform = `translate(-${operacion}%)`;
-    slider.style.transition = "all ease .6s"
-}
 /*FORMULARIO */
+var i = 0;
+var imagenes = document.getElementById("img");
+var carrousel = ["pexels-cottonbro-studio-3951409.jpg", "posible2.webp", "ingredientes_de_la_cerveza.jpg"];
+var transitionId;
+
+function siguiente() {
+    if (i === carrousel.length - 1) {
+        i = 0; 
+    } else {
+        i++;
+    }
+    imagenes.src = carrousel[i];
+}
+
+function anterior() {
+    if (i === 0) {
+        i = carrousel.length - 1;
+    } else {
+        i--;
+    }
+    imagenes.src = carrousel[i];
+}
+
+function autoTransition() {
+transitionId = setInterval(siguiente, 3000); //transition
+}
+
+autoTransition();
+
+
+/*formaulario*/
 const ltaErrores = document.getElementById("ltaErrores");
 const btnSaludar = document.getElementById("btnEnviar");
 

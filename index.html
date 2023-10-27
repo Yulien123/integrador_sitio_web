@@ -28,14 +28,14 @@
             </label>
             <nav class="navbar">
                 <ul class="menubar">
+                    <li><a href="#lugares">LUGARES</a></li>
+                    <li><a href="#login">INGRESAR</a></li>
                     <li><a href="#">PRODUCTOS</a>
                         <ul class="submenunav">
                             <li><a href="child1\index2.html">Heisenberg Café</a></li>
                             <li><a href="child2\index3.html">Heisenberg Miel</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">CONTACTOS</a></li>
-                    <li><a href="#login">INGRESAR</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,26 +45,25 @@
             <p>
                 Conocé todas las características de cada uno de tus productos preferidos.
             </p>
+        
             <!--carrousel-->
-            <div class="container-carousel">
+            <div class="header-content container-carousel">
                 <div class="carruseles" id="slider">
-
                     <section class="slider-section">
-                        <img src="pexels-cottonbro-studio-3951409.jpg">
-                    </section>
-                    <section class="slider-section">
-                        <img src="ingredientes_de_la_cerveza.jpg">
-                    </section>
-                    <section class="slider-section">
-                        <img src="posible2.webp">
+                        <img src="pexels-cottonbro-studio-3951409.jpg" id="img">
                     </section>
                 </div>
-                <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
-                <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+                <div class="btn-left">
+                <i class='bx bx-chevron-left' id="back" onclick="anterior()"></i>
+                </div>
+                <div class="btn-right">
+                <i class='bx bx-chevron-right' id="siguiente" onclick="siguiente()"></i>
+                </div>
             </div>
         </div>
     </header>
-    <section class="services">
+    <!--Servicios-->
+    <section class="services" id="lugares">
 
         <div class="services-content container">
             <h2>Conocé nuestras cervecerias</h2>
@@ -77,20 +76,24 @@
                 <div class="services-1">
                     <img src="img/grifo.png" alt="">
                     <h3>Cerveceria en Illia</h3>
+                    <a href="#login" class="btn-1">Visitar</a>
                 </div>
                 <div class="services-1">
                     <img src="img/grifo.png" alt="">
                     <h3>Cerveceria en Potrero</h3>
+                    <a href="#login" class="btn-1">Visitar</a>
                 </div>
                 <div class="services-1">
                     <img src="img/grifo.png" alt="">
                     <h3>Cerveceria en Trapiche</h3>
+                    <a href="#login" class="btn-1">Visitar</a>
                 </div>
             </div>
 
-            <a href="#" class="btn-1">Visitar</a>
+            
         </div>
     </section>
+    <!--articulo-->
     <section class="house">
         <img class="house-img" src="img/logoh.png">
 
@@ -131,7 +134,7 @@
                     </p>
                 </div>
             </div>
-            <a href="#" class="btn-1">Quiero saber más</a>
+            <a href="#login" class="btn-1">Quiero saber más</a>
         </div>
     </section>
     <!---Form-->
@@ -171,16 +174,16 @@
                 <div class="form-buttom">
                     <button type="submit" id="btnEnviar">Enviar</button>
                 </div>
-                    <div class="mensajeCorrecto" id="miDiv">
-                        <h3 id="pSaludo"></h3>
-                        <p id="nombreOut"></p>
-                        <p id="apellidoOut"></p>
-                        <p id="edadOut"></p>
-                        <p id="correoOut"></p>
-                        <p id="comentarioOut"></p>
-                    </div>
+                <div class="mensajeCorrecto" id="miDiv">
+                    <h3 id="pSaludo"></h3>
+                    <p id="nombreOut"></p>
+                    <p id="apellidoOut"></p>
+                    <p id="edadOut"></p>
+                    <p id="correoOut"></p>
+                    <p id="comentarioOut"></p>
+                </div>
             </form>
-            
+
             <script src="script.js"></script>
     </footer>
 </body>
