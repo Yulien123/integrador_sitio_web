@@ -442,4 +442,61 @@ body {
     color: #E1E2E6;
     text-align: center;
 }
-   
+@media(max-width:991px){
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 100px 30px;
+    }
+    .header-content p {
+        padding: 0;
+    }
+    .house {
+        padding: 30px;
+    }
+    .house-content h2 {
+        padding: 0;
+    }
+    .txt-p {
+        padding: 0;
+    }
+    .general{
+        flex-direction: column;
+    }
+    .general-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .general-2, .general-3 {
+        display: none;
+    }
+    .footer {
+        padding: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
