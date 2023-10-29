@@ -11,7 +11,6 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -19,14 +18,17 @@ body {
 }
 
 .header {
-    background-image: url(img/fondocasa.jpg);
+    background-image: url(/img/cafeteria.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 100px 0;
+
 }
 
 .menu {
@@ -40,7 +42,7 @@ body {
 }
 
 .logo {
-    color: #FFFDFC;
+    color: #47BA34;
     font-size: 25px;
     font-weight: 800;
     /*por el google font*/
@@ -54,7 +56,7 @@ body {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
-    color: #FFFDFC;
+    color: #e99254;
     display: block;
     font-weight: 600;
 }
@@ -120,7 +122,7 @@ body {
 .btn-1 {
     display: inline-block;
     padding: 11px 35px;
-    background-color: #47BA34;
+    background-color: #e99254;
     color: #F9FAFC;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -128,9 +130,8 @@ body {
 }
 
 .btn-1:hover {
-    background-color: #4AB23A;
+    background-color: #b97545;
 }
-
 .header-content .container {
     text-align: center;
     align-items: center;
@@ -139,50 +140,20 @@ body {
 
 .header-content h1 {
     font-size: 60px;
-    color: #F9FAFC;
+    color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: 35px;
-    text-align: center;
+   
+    text-align: left;
 }
-
+.header-content h2 {
+    border-top: 4px solid #e99254;
+    width: 8%;
+    
+}
 .header-content p {
-    font-size: 20px;
-    color: #F9FAFC;
-    ;
-    margin-bottom: 25px;
-    text-align: center;
-}
-/*carrousel*/
-.container-carousel {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-    border-radius: 15px;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.carruseles {
-    width: 300%;
-    height: 100%;
-    display: flex;
-
-}
-
-.slider-section {
-    width: calc(100% / 3);
-    height: 100%;
-}
-
-.slider-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-
+    font-size: 25px;
+    color: #fff;
+    text-align: left;
 }
 
 .btn-left,
@@ -216,119 +187,109 @@ body {
     right: 10px;
 }
 
-/* -------------- */
-
-.house {
-    padding: 100xp 0;
-    background-color: #E1E2E6;
-    position: relative;
-}
-
-.house-content {
-    text-align: center;
-}
-
-
-.house-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #323337;
-    text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
-}
-
-.txt-p {
-    font-size: 16px;
-    color: #414247;
-    padding: 0 250px;
-    margin-bottom: 35px;
-}
-
-.house-group {
+/*art*/
+.art {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    
 }
 
-.house-1 {
-    padding: 0 25px;
+.art-1 {
+    width: 50%;
+    padding:150px 50px 0px 50px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
 }
-
-.house-1 img {
-    width: 100px;
-    height: 100px;
+.art-1 h2 {
+    border-top: 4px solid #e99254;
+    width: 20%;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
-
-.house-img {
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    width: 200px;
-
+.art-1 h1 {
+   font-size: 40px;
+   margin-top: 100px;
 }
-
-.house-1 h3 {
-    color: #323337;
+.art-1 p {
     font-size: 20px;
-    margin-bottom: 15px;
+ }
+.container-carousel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 150px 25px;
 
 }
 
-.services {
-    background-image:
-        url(img/cervezavista.jpg);
+.carruseles {
+    width: 300%;
+    height: 100%;
+    display: flex;
+
+}
+
+.slider-section {
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px
+}
+
+/*general*/
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 50px 250px 50px 100px;
+    background-color: #E1E2E6;
+}
+
+.general-2 {
+    background-image: url(/img/cafe1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
+    width: 50%;
 }
 
-.services-content {
-    text-align: center;
+.general-3 {
+    background-image: url(/img/cafe2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
 }
-
-.services-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #F9FAFC;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-.services-content p {
+.general-1 p {
     font-size: 20px;
-    color: #fff;
-    margin-bottom: 50px;
-    padding: 0 100px;
+    margin-bottom: 20px;
+ }
+.general-1 h2 {
+   font-size: 40px;
+   text-transform: uppercase;
 }
-
-.services-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.general-1 h3 {
+    border-top: 4px solid #e99254;
+    width: 20%;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
-
-.services-1 {
-    padding: 0 100px;
-}
-
-.services-1 img {
-    width: 100px;
-    margin-bottom: 15px;
-}
-
-.services-1 h3 {
-    color: #ffffff;
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-/*formulario*/
+/*Formulario*/
 .footer {
     padding: 100px 0;
-    background-color: #414247;
+    background-color: #000000;
     width: 100%;
     display: flex;
     align-items: center;
@@ -338,22 +299,21 @@ body {
 .footer-content {
     width: 100%;
     max-width: 600px;
-    background-color: #2c2f35;
+    background-color: #000000;
     padding: 50px 60px 70px;
     text-align: center;
     border-radius: 25px;
 }
-
 .formContainer {
     max-width: 90%;
     margin: auto;
-    margin-top: 20px;
+    
 }
 
 :root {
     --cfondo: rgb(207, 211, 212);
     --cfondoForm1: rgba(1, 80, 88, 0.39);
-    --cfondoForm2: rgb(19, 184, 66);
+    --cfondoForm2: rgb(43, 33, 14);
     --cnegro: black;
     --ctexto: rgb(255, 255, 255);
     --cblanco: white;
@@ -388,9 +348,16 @@ body {
     text-align: center;
     margin: 0;
     margin-bottom: 20px;
-    letter-spacing: 3px;
     color: #47BA34;
 
+}
+.formContainer p {
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
 }
 
 .form-input {
@@ -475,71 +442,4 @@ body {
     color: #E1E2E6;
     text-align: center;
 }
-
-@media(max-width:991px){
-    .menu {
-        padding: 30px;
-    }
-    .menu label {
-        display: initial;
-    }
-    .menu .navbar {
-        position: absolute;
-        top: 100px;
-        left: 0;
-        right: 0;
-        background-color: #323337;
-        display: none;
-    }
-    .menu .navbar ul li {
-        width: 100%;
-    }
-    #menu:checked ~ .navbar{
-        display: initial;
-    }
-    .header {
-        min-height: 0vh;
-    }
-    .header-content {
-        padding: 100px 30px;
-    }
-    .header-content p {
-        padding: 0;
-    }
-    .house {
-        padding: 30px;
-    }
-    .house-content h2 {
-        padding: 0;
-    }
-    .txt-p {
-        padding: 0;
-    }
-    .house-group {
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-    .house-img{
-        display: none;
-    }
-    .services {
-        padding: 30px;
-    }
-    .services-content p {
-        padding: 0;
-    }
-    .services-group {
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-    .services-1 {
-        margin-bottom: 25px;
-    }
-    .footer {
-        padding: 30px;
-    }
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-}
+   

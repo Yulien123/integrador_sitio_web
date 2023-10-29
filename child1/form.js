@@ -1,7 +1,7 @@
 /*carrousel */
 var i = 0;
-var imagenes = document.getElementById("img");
-var carrousel = ["pexels-cottonbro-studio-3951409.jpg", "posible2.webp", "ingredientes_de_la_cerveza.jpg"];
+var imagenes = document.getElementById("imagen");
+var carrousel = ["/img/fondo2.jpeg", "/img/pexels-nork-photography-4085266.jpg", "/img/pexels-lisa-fotios-747869.jpg"];
 var transitionId;
 
 function siguiente() {
@@ -23,7 +23,7 @@ function anterior() {
 }
 
 function autoTransition() {
-transitionId = setInterval(siguiente, 3000); //transition
+transitionId = setInterval(siguiente, 2000); //transition
 }
 
 autoTransition();

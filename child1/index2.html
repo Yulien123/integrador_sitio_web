@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda pagina</title>
-</head>
+    <title>Cafetería Heisenberg</title>
+    <link rel="shortcut icon" href="/img/logoh.png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
 <body>
-    <h1>Hola</h1>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">HEISENBERG</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/logo.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul class="menubar">
+                    <li><a href="#login">INGRESAR</a></li>
+                    <li><a href="#">PRODUCTOS</a>
+                        <ul class="submenunav">
+                            <li><a href="/index.html">Heisenberg Cervezas</a></li>
+                            <li><a href="child2\index3.html">Heisenberg Miel</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <h2></h2>
+            <p>
+                Productos Central de Café
+            </p>
+            <h1>Tostadores de Cafés de especialidad</h1>
+    </header>
+
+    <!--articulo-->
+    <section class="art">
+        <div class="art-1">
+            <div class="art-content container-carousel">
+                <div class="carruseles" id="slider">
+                    <section class="slider-section">
+                        <img src="/img/fondo2.jpeg" id="imagen">
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="art-1">
+            <h1>Central de Café</h1>
+            <h2></h2>
+            <p>
+                Es el tostador de café más antiguo de café de especialidad en Argentina,
+                 hace más de 25 años, también cafés de corte, como el italiano Luggiani y 
+                 todos los productos e ingredientes relacionados a la industria del café. 
+                 Atendemos más de 500 clientes restaurantes, hoteles y bares en todo el país.
+                A su vez contamos con una excelente logística de despacho para nuestros clientes 
+                que deseen disfrutar de la excelencia de nuestro café en sus casas, ya sea en San Luis 
+                como en otras provincias del país.
+            </p>
+        </div>
+    </section>
+    <!--General-->
+    <section class="general">
+        <div class="general-1">
+            <h2>Central de Café</h2>
+            <h3></h3>
+            <p>
+                Es el tostador de café más antiguo de café de especialidad en Argentina,
+                 hace más de 25 años, también cafés de corte, como el italiano Luggiani y 
+                 todos los productos e ingredientes relacionados a la industria del café. 
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
+        </div>
+        <div class="general-2"></div>
+    </section>
+
+    <section class="general">
+        <div class="general-3"></div>
+        <div class="general-1">
+            <h2>Central de Café</h2>
+            <h3></h3>
+            <p>
+                Es el tostador de café más antiguo de café de especialidad en Argentina,
+                 hace más de 25 años, también cafés de corte, como el italiano Luggiani y 
+                 todos los productos e ingredientes relacionados a la industria del café. 
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
+        </div>
+    </section>
+
+    <!---Form-->
+    <footer class="footer">
+        <div class="formContainer" id="login">
+            <p>únete a</p><h2> Heisenberg</h2>
+            <form class="form" onsubmit="return ValidarFormulario()" id="frm">
+                <p class="form-title">Regístrate</p>
+                <div class="mensajeError">
+                    <ul id="ltaErrores"></ul>
+                </div>
+                <div class="form-input">
+                    <label for="f_nombre">Nombre</label>
+                    <input type="text" id="f_nombre" name="f_nombre" maxlength="16" pattern="[a-ZA-z]{3,16}" />
+                </div>
+                <div class="form-input">
+                    <label for="f_apellido">Apellido</label>
+                    <input type="text" id="f_edad" name="f_edad" maxlength="16" pattern="[a-ZA-z]{3,16}" />
+                </div>
+                <div class="form-input">
+                    <label for="f_edad">Edad</label>
+                    <input type="number" id="f_apellido" name="f_apellido" min="18" max="100" />
+                </div>
+                <div class="form-input">
+                    <label for="f_correo">Correo Electronico</label>
+                    <input type="email" id="f_correo" name="f_correo" maxlength="50" />
+                </div>
+                <div class="form-input">
+                    <label for="f_comentario">Deja un comentario</label>
+                    <input type="text" id="f_comentario" name="f_comentario" minlength="3" maxlength="250" />
+                </div>
+                <div class="form-termsAndConditions termsAndConditions">
+                    <input id="f_tyc" name="f_tyc" type="checkbox" />
+                    <label for="f_tyc">He leído y acepto los </label>
+                    <a id="terms" href="#terms">Terminos y Condiciones</a>
+                </div>
+                <div class="form-buttom">
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                </div>
+                <div class="mensajeCorrecto" id="miDiv">
+                    <h3 id="pSaludo"></h3>
+                    <p id="nombreOut"></p>
+                    <p id="apellidoOut"></p>
+                    <p id="edadOut"></p>
+                    <p id="correoOut"></p>
+                    <p id="comentarioOut"></p>
+                </div>
+            </form>
+
+            <script src="form.js"></script>
+    </footer>
 </body>
 </html>
