@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberShop</title>
+    <link rel="shortcut icon" href="img/logoh.png" type="image/x-icon">
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">HEISENBERG</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/logoh.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul class="menubar">
+
+                    <li><a href="#login">TURNOS</a></li>
+                    <li><a href="#">PRODUCTOS</a>
+                        <ul class="submenunav">
+                            <li><a href="index.html">Heisenberg Cervezas</a></li>
+                            <li><a href="index2.html">Heisenberg Café</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <h1>HEISENBARBERSHOP</h1>
+            <h2>•BARBER SHOP•</h2>
+            <div class="cuadril">
+                <p>
+                    Peluqueria y Barberia
+                </p>
+            </div>
+    </header>
+    <!--articulo-->
+    <section class="art">
+        <div class="art-1">
+            <img src="img/pelu5.jpg" alt="">
+        </div>
+        <div class="art-1">
+            <h1>La Barberia</h1>
+            <h2></h2>
+            <p>
+                <b>Heisenberg Barbershop</b> abrió sus puertas el 30 de Junio del 2015.
+                El concepto desde aquel entonces hasta ahora, ha ido migrando año tras año,
+                lo cual hace que hoy en dia se destaque como peluquería y barbería clásica tradicional de los años 20.
+                Se caracteriza por sus afeitados clásicos a navaja con toallas calientes y
+                frias como asi también por sus arreglos de barbas , cortes de estilo europeo y
+                estar siempre a la vanguardia sobre las nuevas tendencias masculinas.
+                Barbershop no es simplemente un corte de cabello.
+
+            </p>
+        </div>
+    </section>
+    <!--Blog-->
+    <section class="blog container">
+        <h2>COLECCIONES</h2>
+        <h4></h4>
+        <p>
+            Conocé nuestros ultimos trabajos y colecciones.
+        </p>
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="img/inviernoreal.webp" alt="">
+                <h3>Invierno</h3>
+                <p>
+                    Se trata del corte de pelo corto por los lados y largo por arriba. De hecho, estamos seguros que esto es lo que sueles decir cuando vienes a tu HeisenBarberShop te preguntamos cómo quieres cortarte el pelo.
+                </p>
+            </div>
+
+            <div class="blog-1">
+                <img src="img/primavera.jpg" alt="">
+                <h3>Primavera</h3>
+                <p>
+                   El corte “fade” es otro de los que se pueden incluir entre esos cortes que tiene los lados muy cortos y la parte de arriba más larga. Un ejemplo lo ves arriba con un degradado perfecto para que lo luzcas esta primavera.
+
+
+                </p>
+            </div>
+
+            <div class="blog-1">
+                <img src="img/inviernoo.jpg" alt="">
+                <h3>Verano</h3>
+                <p>
+                    Pelo corto a los lados y más largo arriba es el tipo de corte que se conoce como “texturizado“. Un estilo moderno en el que el cabello se rapa a los lados, pero la parte central se corta creando pequeñas capas que aportan mucho movimiento.
+                    </p>
+            </div>
+        </div>
+    </section>
+     <!--articulo-->
+     <section class="services">
+        <div class="services-1">
+            <h1>Servicios</h1>
+            <h2 class="linea"></h2>
+            <p>
+                En Heisenberg Barbershop trabajamos con citas para brindar el tiempo y asesoramiento 
+                necesario a cada cliente las cuales pueden ser solicitadas telefónicamente o atraves 
+                de la aplicación Heisenberg (IOS y Android).
+            </p>
+            <p class="aperitivo">
+                Todos nuestros servicios incluyen una bebida de cortesía (Café, Cerveza o Whisky).
+            </p>
+            <a href="#login" class="btn-1">Solicitar turno</a>
+        </div>
+        <div class="services-1 apartado">
+            <div class="servicio">
+                <h2>• Corte de Cabello •</h2>
+            <p class="tipos">
+                Corte de cabello con lavado incluído y terminaciones a navaja.
+            </p>
+            </div>
+            <div class="servicio">
+                <h2>• Arreglo de Barba •</h2>
+            <p class="tipos">
+                Arreglo de barba con fomento caliente y frío. Terminaciones a navaja y productos para el cuidado de tu piel y barba.
+            </p>
+            </div>
+            <div class="servicio">
+                <h2>• Afeitado Italiano (clásico) •</h2>
+            <p class="tipos">
+                
+                Afeitado italiano con dos toallas caliente, una fría, aceites aromáticos y productos para el cuidado de la piel.
+            </p>
+            </div>
+
+        </div>
+    </section>
+    <!---Form-->
+    <footer class="footer">
+        <div class="formContainer" id="login">
+            <p>Pide un turno en</p>
+            <h2> HeisenBarberShop</h2>
+            <form class="form" onsubmit="return ValidarFormulario()" id="frm">
+                <p class="form-title">Regístrate</p>
+                <div class="mensajeError">
+                    <ul id="ltaErrores"></ul>
+                </div>
+                <div class="form-input">
+                    <label for="f_nombre">Nombre</label>
+                    <input type="text" id="f_nombre" name="f_nombre" maxlength="16" pattern="[a-ZA-z]{3,16}" />
+                </div>
+                <div class="form-input">
+                    <label for="f_apellido">Apellido</label>
+                    <input type="text" id="f_edad" name="f_edad" maxlength="16" pattern="[a-ZA-z]{3,16}" />
+                </div>
+                <div class="form-input">
+                    <label for="f_edad">Edad</label>
+                    <input type="number" id="f_apellido" name="f_apellido" min="18" max="100" />
+                </div>
+                <div class="form-input">
+                    <label for="f_correo">Correo Electronico</label>
+                    <input type="email" id="f_correo" name="f_correo" maxlength="50" />
+                </div>
+                <div class="form-input">
+                    <label for="f_comentario">Deja un comentario</label>
+                    <input type="text" id="f_comentario" name="f_comentario" minlength="3" maxlength="250" />
+                </div>
+                <div class="form-termsAndConditions termsAndConditions">
+                    <input id="f_tyc" name="f_tyc" type="checkbox" />
+                    <label for="f_tyc">He leído y acepto los </label>
+                    <a id="terms" href="#terms">Terminos y Condiciones</a>
+                </div>
+                <div class="form-buttom">
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                </div>
+                <div class="mensajeCorrecto" id="miDiv">
+                    <h3 id="pSaludo"></h3>
+                    <p id="nombreOut"></p>
+                    <p id="apellidoOut"></p>
+                    <p id="edadOut"></p>
+                    <p id="correoOut"></p>
+                    <p id="comentarioOut"></p>
+                </div>
+            </form>
+
+            <script src="form.js"></script>
+    </footer>
+</body>
+
+</html>
