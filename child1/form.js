@@ -1,7 +1,7 @@
 /*carrousel */
 var i = 0;
 var imagenes = document.getElementById("imagen");
-var carrousel = ["/img/fondo2.jpeg", "/img/pexels-nork-photography-4085266.jpg", "/img/pexels-lisa-fotios-747869.jpg"];
+var carrousel = ["/child1/fondo2.jpeg", "/child1/pexels-nork-photography-4085266.jpg", "/child1/pexels-lisa-fotios-747869.jpg"];
 var transitionId;
 
 function siguiente() {
