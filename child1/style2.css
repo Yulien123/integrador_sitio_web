@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    background-image: url(/img/cafeteria.jpg);
+    background-image: url(/child1/cafeteria.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -258,7 +258,7 @@ body {
 }
 
 .general-2 {
-    background-image: url(/img/cafe1.jpg);
+    background-image: url(/child1/cafe1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,7 +266,7 @@ body {
 }
 
 .general-3 {
-    background-image: url(/img/cafe2.jpg);
+    background-image: url(/child1/cafe2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
