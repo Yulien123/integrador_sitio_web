@@ -378,8 +378,8 @@ body {
 
 :root {
     --cfondo: rgb(207, 211, 212);
-    --cfondoForm1: rgba(1, 80, 88, 0.39);
-    --cfondoForm2: rgb(43, 33, 14);
+    --cfondoForm1: rgba(28, 26, 26, 0.39);
+    --cfondoForm2: rgb(28, 26, 26);
     --cnegro: black;
     --ctexto: rgb(255, 255, 255);
     --cblanco: white;
@@ -570,7 +570,6 @@ body {
         padding: 30px;
         text-align: center;
     }
-
     .footer {
         padding: 30px;
     }
