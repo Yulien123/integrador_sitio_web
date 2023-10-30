@@ -1,7 +1,7 @@
 /*carrousel */
 var i = 0;
 var imagenes = document.getElementById("img");
-var carrousel = ["pexels-cottonbro-studio-3951409.jpg", "posible2.webp", "ingredientes_de_la_cerveza.jpg"];
+var carrousel = ["img/pexels-cottonbro-studio-3951409.jpg", "img/posible2.webp", "img/ingredientes_de_la_cerveza.jpg"];
 var transitionId;
 
 function siguiente() {
